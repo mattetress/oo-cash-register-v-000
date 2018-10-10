@@ -6,4 +6,8 @@ class CashRegister
     @total = 0
   end
 
+  def discount
+    @emp_discount
+  end
+
 end
