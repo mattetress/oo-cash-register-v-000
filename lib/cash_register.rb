@@ -1,11 +1,9 @@
 class CashRegister
   attr_accessor :total, :discount, :items
 
-
   def cart
     @items
   end
-
 
   def initialize(emp_discount = 0)
     @discount = emp_discount
@@ -19,5 +17,8 @@ class CashRegister
     self.cart << item
   end
 
+  def apply_discount
+
+  end
 
 end
