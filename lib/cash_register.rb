@@ -1,7 +1,10 @@
 class CashRegister
-  attr_accessor :total, :discount
+  attr_accessor :total, :discount, :items
 
-  @items = []
+  def cart
+    @items
+  end
+  
 
   def initialize(emp_discount = 0)
     @discount = emp_discount
