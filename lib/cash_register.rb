@@ -1,7 +1,7 @@
 class CashRegister
   attr_accessor :total, :discount, :items
 
-  def cart
+  def items
     @items
   end
 
@@ -14,7 +14,7 @@ class CashRegister
   def add_item(item, price, quantity = 1)
     previous_total = @total
     @total = @total + price * quantity
-    self.cart << item
+    self.items << item
   end
 
   def apply_discount
@@ -26,4 +26,5 @@ class CashRegister
     end
   end
 
+  
 end
