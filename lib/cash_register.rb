@@ -4,7 +4,7 @@ class CashRegister
   def cart
     @items
   end
-  
+
 
   def initialize(emp_discount = 0)
     @discount = emp_discount
@@ -14,7 +14,7 @@ class CashRegister
   def add_item(item, price, quantity = 1)
     previous_total = @total
     @total = @total + price * quantity
-    @items << item
+    self.cart << item
   end
 
 
